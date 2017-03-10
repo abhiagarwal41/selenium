@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Sample Suite]">
+  <test name="First test(failed)">
+    <classes>
+      <class name="com.indeed.tests.TestNGtutorial">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="softAssertExample"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="compulsoryFail"/>
+          <include name="checkTrue"/>
+        </methods>
+      </class> <!-- com.indeed.tests.TestNGtutorial -->
+    </classes>
+  </test> <!-- First test(failed) -->
+</suite> <!-- Failed suite [Sample Suite] -->

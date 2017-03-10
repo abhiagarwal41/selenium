@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM  "http://testng.org/testng-1.0.dtd">
+<suite name  = "Sample Suite">
+    
+    <test name  = "First test">
+        <classes>
+            <class name = "com.indeed.tests.TestNGtutorial"></class>
+        </classes>
+    </test>
+    
+    <test name  = "Second test">
+        <classes>
+            <class name = "com.indeed.tests.ParameterizationTestNG"></class>
+        </classes>
+    </test>
+    
+    </suite>

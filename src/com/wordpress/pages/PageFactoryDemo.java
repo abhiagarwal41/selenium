@@ -1,7 +1,10 @@
 package com.wordpress.pages;
 
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -38,8 +41,12 @@ public class PageFactoryDemo {
 	public void checkNewPost()
 	{
 
-	System.setProperty("webdriver.chrome.driver", "C:\\Users\\aaga60\\Downloads\\chromedriver_win32\\chromedriver.exe");
-	WebDriver driver=new ChromeDriver();
+	//System.setProperty("webdriver.chrome.driver", "C:\\Users\\aaga60\\Downloads\\chromedriver_win32\\chromedriver.exe");
+	//WebDriver driver=new ChromeDriver();
+	System.setProperty("webdriver.gecko.driver","C:\\Users\\aaga60\\Downloads\\geckodriver-v0.14.0-win64\\geckodriver.exe");
+	DesiredCapabilities capabilities = DesiredCapabilities.firefox(); 
+    capabilities.setCapability("marionette", true);
+	WebDriver driver=new FirefoxDriver();
 		 
 	driver.manage().window().maximize();
 		 

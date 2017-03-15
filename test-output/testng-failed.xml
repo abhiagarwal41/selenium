@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.wordpress.pages.PageFactoryDemo">
+      <class name="com.indeed.tests.DataDrivenTesting">
         <methods>
-          <include name="checkNewPost"/>
+          <include name="QuitTC"/>
+          <include name="setup"/>
+          <include name="doLogin" invocation-numbers="0 1 2"/>
         </methods>
-      </class> <!-- com.wordpress.pages.PageFactoryDemo -->
+      </class> <!-- com.indeed.tests.DataDrivenTesting -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

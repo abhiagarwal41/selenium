@@ -30,5 +30,10 @@ public class ExcelDataConfig {
 		sheet = workbook.getSheetAt(sheetIndex);
 		return sheet.getRow(row).getCell(column).getStringCellValue();
 	}
+	
+    public int getRowCount(int sheetIndex){
+		
+		return workbook.getSheetAt(sheetIndex).getLastRowNum();
+	}
 
 }

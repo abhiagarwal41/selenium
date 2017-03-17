@@ -24,7 +24,7 @@ public class DataDrivenTesting {
 		driver.manage().window().maximize();
 	}
 	
-	@Test(dataProvider = "getData")
+	@Test(dataProvider = "getData",dataProviderClass=com.dataproviders.DataClass.class)
 	public void doLogin(String username, String password){
 		 
 		driver.get(reader.getAppUrl());
@@ -42,7 +42,7 @@ public class DataDrivenTesting {
 	driver.quit();
 	}
 	
-	@DataProvider
+	/*@DataProvider
 	public Object[][] getData(){
 		ExcelDataConfig config = new ExcelDataConfig("C:\\Users\\aaga60\\workspace\\selenium\\TestData\\testdata.xlsx");
 		int rowCount = config.getRowCount(0);
@@ -53,6 +53,6 @@ public class DataDrivenTesting {
 		}
 		
 		return data;
-	}
+	}*/
 
 }

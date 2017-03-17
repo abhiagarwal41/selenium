@@ -1,0 +1,15 @@
+Guidelines for creating framework :
+
+1. Read data from xls
+2. Implement tests and validations
+3. Reports - XSLT, ExtentReport
+4. Logging and screenshots in reports
+5. run project with ANT/Maven/Eclipse
+6. Implement Grid - Parallel execution
+7. Reusability
+8. Should be able to run on different environments - QA/ UAT etc
+9. Implement keywords
+10. Email reports
+11. Easy to change
+12. Test scripts should be least dependent on each other
+13. Don't hardcode anything in scripts, maintain property and excel files to store data

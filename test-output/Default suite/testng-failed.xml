@@ -7,7 +7,7 @@
         <methods>
           <include name="QuitTC"/>
           <include name="setup"/>
-          <include name="doLogin" invocation-numbers="0 1 2"/>
+          <include name="doLogin" invocation-numbers="0 2"/>
         </methods>
       </class> <!-- com.indeed.tests.DataDrivenTesting -->
     </classes>
